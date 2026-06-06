@@ -1,6 +1,6 @@
 import { Download, FileText } from "lucide-react";
 import { Reveal, SectionHeader } from "./Section";
-import resumeFile from "@/assets/CV-RESUME(LEA LABRADOR).pdf";
+import resumeFile from "@/assets/CV-RESUME.pdf";
 
 export function Resume() {
   return (
