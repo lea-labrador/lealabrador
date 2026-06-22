@@ -160,20 +160,7 @@ export function Contact() {
                       reply.
                     </p>
                   </div>
-                  <div
-                    className={`inline-flex items-center gap-2 self-start rounded-full border px-3 py-1.5 text-xs uppercase tracking-[0.2em] ${
-                      isSending
-                        ? "border-primary/40 bg-primary/10 text-primary"
-                        : "border-emerald-500/30 bg-emerald-500/10 text-emerald-300"
-                    }`}
-                  >
-                    {isSending ? (
-                      <LoaderCircle className="h-3.5 w-3.5 animate-spin" />
-                    ) : (
-                      <CheckCircle2 className="h-3.5 w-3.5" />
-                    )}
-                    {isSending ? "Sending" : "Ready"}
-                  </div>
+                  
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <Field
