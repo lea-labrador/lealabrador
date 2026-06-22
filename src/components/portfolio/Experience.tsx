@@ -11,6 +11,13 @@ const items = [
     desc: "Graduated with a focus on web technologies, HCI and software engineering.",
   },
   {
+    icon: Award,
+    title: "Research Implemetation",
+    org: "Bohol Island State University - Balilihan Campus",
+    date: "2026",
+    desc: "Visitor management system with QR check-in, role-based access, real-time logs and reporting.",
+  },
+  {
     icon: Briefcase,
     title: "DICT AI.Deas for Impact 2025",
     org: "Top 4 Finalist, Visionary Innovators (Special Award)",
