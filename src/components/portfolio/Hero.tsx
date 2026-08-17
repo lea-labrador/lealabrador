@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 
 const ROLES = [
-  "Computer Science Graduate",
+  "Computer Science",
   "UI/UX Designer",
   "Front-End Developer",
   "Web Developer",
+  "Application Developer"
 ];
 
 function useTyping() {

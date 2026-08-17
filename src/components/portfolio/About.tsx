@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionHeader } from "./Section";
-import profile from "@/assets/me1.png";
+import profile from "@/assets/me_formal.png";
 
 export function About() {
   return (
@@ -31,7 +31,7 @@ export function About() {
                 alt="Lea Sheila Labrador"
                 width={768}
                 height={768}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-[center_10%]"
               />
             </div>
           </motion.div>

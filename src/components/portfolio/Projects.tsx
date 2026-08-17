@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { SectionHeader } from "./Section";
 import visitrak from "@/assets/projectVisitrak.png";
 import mobile from "@/assets/project-artefacts.png";
@@ -12,6 +12,7 @@ const projects = [
     desc: "Visitor management system with QR check-in, role-based access, real-time logs and reporting.",
     tech: ["React", "Firebase", "Tailwind", "QR"],
     image: visitrak,
+    link: "https://visitrak-system.vercel.app/",
     featured: true,
   },
   {
@@ -19,18 +20,21 @@ const projects = [
     desc: "End-to-end mobile experience: research, wireframes, hi-fi prototypes and design system.",
     tech: ["Figma", "Prototyping", "Design System"],
     image: mobile,
+    link: "https://www.figma.com/proto/0S0W4SwV6GfSz0Falw1rMT/Art%C3%A9Facts?t=Q4EoeQpwgJ2SDU4E-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-3&starting-point-node-id=1%3A3&show-proto-sidebar=1",
   },
   {
     title: "Portfolio Website",
     desc: "This very site — built from scratch with motion, glassmorphism and a custom design system.",
     tech: ["React", "Vite", "Framer Motion"],
     image: portfolio,
+    link: "#home",
   },
   {
     title: "L7-Cafe Website",
     desc: "L7-Cafe is a modern café app that streamlines food ordering, table reservations, and customer engagement in one convenient platform.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: coffee,
+    link: "https://l7-cafe-pfym.vercel.app/",
   },
 ];
 
@@ -86,20 +90,16 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                {/* <div className="mt-5 flex gap-2">
+                <div className="mt-5 flex gap-2">
                   <a
-                    href="#"
-                    className="inline-flex items-center gap-1.5 rounded-full glass px-4 py-2 text-xs font-medium hover:bg-primary/20"
-                  >
-                    <Github className="h-3.5 w-3.5" /> Code
-                  </a>
-                  <a
-                    href="#"
+                    href={p.link}
+                    target={p.link.startsWith("http") ? "_blank" : undefined}
+                    rel={p.link.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground glow-border hover:scale-105 transition"
                   >
-                    <ExternalLink className="h-3.5 w-3.5" /> Live demo
+                    <ExternalLink className="h-3.5 w-3.5" /> Visit Project
                   </a>
-                </div> */}
+                </div>
               </div>
             </motion.article>
           ))}
