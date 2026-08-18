@@ -7,7 +7,8 @@ const ROLES = [
   "UI/UX Designer",
   "Front-End Developer",
   "Web Developer",
-  "Application Developer"
+  "Application Developer",
+  "Data Analyst"
 ];
 
 function useTyping() {
